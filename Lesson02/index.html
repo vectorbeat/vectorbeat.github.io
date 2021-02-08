@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Love Vodka 😍</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(#d0ece7, #48c9b0);
+        color: #424949;
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      h1 {
+        text-align: center;
+        color: #ffffff;
+        background-color: #48c9b0;
+        padding: 10px;
+        margin-top: 0px;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: lighter;
+        position: relative;
+        top: 75px;
+      }
+
+      button {
+        background-color: #e67e22;
+        color: #ffffff;
+        border: none;
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 40px;
+        box-shadow: 2px 2px 5px 1px rgba(7, 7, 7, 0.2);
+      }
+
+      button:hover {
+        background-color: #9c640c;
+      }
+      hr {
+        border-style: none;
+        border-top: 5px dotted #17a589;
+        margin: 20px;
+      }
+      img {
+        margin-top: 75px;
+        position: static;
+        width: 600px;
+        border-radius: 8px;
+      }
+
+      a {
+        font-size: 10px;
+        text-decoration: none;
+        color: #e67e22;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+      a.learnMore {
+        display: block;
+        font-size: 14px;
+        color: #e67e22;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+
+      p.footer {
+        font-size: 10px;
+      }
+
+      .container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I Love Vodka!</h1>
+      <h2>Especially, <em>GOOD</em> vodka</h2>
+      <img
+        src="https://www.gentlemansgazette.com/wp-content/uploads/2014/02/The-Vodka-Guide1-845x321.jpg"
+        alt="Vodka bottles"
+      />
+      <br />
+      <p>
+        <strong>Vodka</strong> (Polish: wódka [ˈvutka], Russian: водка [ˈvotkə],
+        Swedish: vodka [vɔdkɑː]) is a clear distilled alcoholic beverage with
+        different varieties originating in Poland, Russia and Sweden.[1][2] It
+        is composed primarily of water and ethanol, but sometimes with traces of
+        impurities and flavorings. Traditionally it is made by distilling the
+        liquid from cereal grains that have been fermented, with potatoes
+        arising as a substitute in more recent times, and some modern brands
+        using fruits, honey or maple sap as the base. <br />
+        <br />
+        Since the 1890s, standard vodkas have been 40% alcohol by volume (ABV)
+        (80 U.S. proof).[3] The European Union has established a minimum alcohol
+        content of 37.5% for vodka.[4][5] Vodka in the United States must have a
+        minimum alcohol content of 40%.[6]
+        <br />
+        <br />Vodka is traditionally drunk "neat" (not mixed with water, ice, or
+        other mixers), and it is often served freezer chilled in the vodka belt
+        of Belarus, Estonia, Finland, Iceland, Lithuania, Latvia, Norway,
+        Poland, Russia, Sweden, and Ukraine. It is also used in cocktails and
+        mixed drinks, such as the vodka martini, Cosmopolitan, vodka tonic,
+        screwdriver, greyhound, Black or White Russian, Moscow mule, Bloody
+        Mary, and Caesar.
+        <a
+          class="learnMore"
+          href="https://en.wikipedia.org/wiki/Vodka"
+          target="_blank"
+          >Learn More on wikipedia</a
+        >
+      </p>
+      <br />
+      <button class="buy-button">Buy Some Vodka 🍸</button>
+      <hr />
+      <p class="footer">
+        Coded by <a href="mailto:mary@threadsculture.com">Mary Ann Colston</a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let age = prompt("How old are you?");
+
+        if (age < 21) {
+          alert("Sorry, you must be 21 years old. No vodka for you.");
+        } else {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email address?");
+          alert(
+            "Thank you " +
+              name +
+              ", we will be contacting you at " +
+              email +
+              " very soon! 😀"
+          );
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
