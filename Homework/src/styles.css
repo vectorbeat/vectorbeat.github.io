@@ -1,13 +1,10 @@
-html,
-body {
-  height: 100%;
-}
-
 body {
   background-color: #fae16c;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  min-height: 600px;
 }
 
 .test-lg {
@@ -22,6 +19,7 @@ body {
   flex: 1 0 auto;
   margin-bottom: 10px;
   margin-top: 10px;
+  padding-bottom: 55px;
 }
 
 p {
@@ -50,7 +48,7 @@ a {
 .use-location {
   display: inline;
   margin-right: 0px;
-  text-align: right;
+  float: right;
 }
 
 .main {
@@ -158,13 +156,14 @@ hr {
 
 .footer {
   background-color: #121e24;
+  position: fixed;
   font-family: "Roboto Condensed", Sans-Serif;
   color: #ffffff;
   width: 100%;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  flex-shrink: 0;
+  padding: 10px;
+  height: 55px;
+  bottom: 0;
 }
 
 .recent-title {
@@ -182,6 +181,7 @@ hr {
 .second-search a,
 .third-search a {
   font-family: "Roboto Condensed", Sans-Serif;
+  font-size: 16px;
   color: #ffffff;
 }
 
@@ -196,5 +196,11 @@ hr {
   .low,
   .temp-descrip {
     font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    display: none;
   }
 }
