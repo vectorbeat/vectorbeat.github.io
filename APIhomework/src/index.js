@@ -8,7 +8,7 @@ function getCurrentPosition(position) {
   });
 }
                       
-function showTemperature(temp, country, city = null) {
+function showTemperature(temp, city, country) {
   const temperature = Math.round(temp);
   const city = city.trim();
   const country = country.trim();
